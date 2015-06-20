@@ -18,12 +18,12 @@ body {
 // Container
 .container {
   @include clearfix;
-  margin: 2rem auto;
+  margin: 1rem auto;
   max-width: $content-width;
   width: 90%;
 
   @media #{$medium} {
-    margin: 3rem auto;
+    margin: 2rem auto;
   }
 }
 
@@ -66,4 +66,14 @@ ul {
 
 .links__item {
   font-size: .9rem;
+}
+
+.hero {
+  background: url("/assets/images/josh.jpg") center;
+  background-size: cover;
+  height: 350px;
+
+  @media #{$medium} {
+    height: 550px;
+  }
 }
