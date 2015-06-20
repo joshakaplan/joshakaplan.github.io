@@ -1,0 +1,10 @@
+# Site settings
+title: Josh Kaplan
+
+# Build settings
+markdown: kramdown
+
+# Sass settings
+sass:
+  sass_dir: assets/stylesheets
+  style: :compressed
