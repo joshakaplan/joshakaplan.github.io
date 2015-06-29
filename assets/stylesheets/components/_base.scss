@@ -37,7 +37,7 @@ section {
 }
 
 // Images
-img { max-width: 100%; }
+img { width: 100%; }
 
 // Links
 a {
@@ -66,14 +66,4 @@ ul {
 
 .links__item {
   font-size: .9rem;
-}
-
-.hero {
-  background: url("/assets/images/josh.jpg") center;
-  background-size: cover;
-  height: 350px;
-
-  @media #{$medium} {
-    height: 550px;
-  }
 }

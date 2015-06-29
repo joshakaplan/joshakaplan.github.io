@@ -1,0 +1,32 @@
+.gallery {
+  @include clean-list;
+}
+
+.gallery-item {
+  margin-bottom: .7em;
+
+  @media #{$medium} {
+    float: left;
+    width: 49%;
+    margin-left: 2%;
+
+    &:nth-of-type(2n+1) {
+      margin-left: 0;
+      clear: left;
+    }
+  }
+
+  @media #{$large} {
+    width: 32%;
+
+    &:nth-of-type(2n+1) {
+      clear: none;
+      margin-left: 2%;
+    }
+
+    &:nth-of-type(3n+1) {
+      clear: left;
+      margin-left: 0;
+    }
+  }
+}

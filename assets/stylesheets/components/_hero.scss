@@ -1,0 +1,9 @@
+.hero {
+  background: url("/assets/images/momma-rig-4.jpg") center;
+  background-size: cover;
+  height: 350px;
+
+  @media #{$medium} {
+    height: 550px;
+  }
+}

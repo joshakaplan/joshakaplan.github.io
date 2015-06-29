@@ -13,15 +13,18 @@
     text-transform: uppercase;
   }
 
-  h4 {
+  h3 {
     color: $white;
-    font-size: .9rem;
-    letter-spacing: .0625rem;
-    margin-bottom: .8rem;
-    text-transform: uppercase;
   }
 
-  section { border: 0; }
+  section {
+    @include clearfix;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+
+    &:last-child { border-bottom: 0; }
+  }
 
   header {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
