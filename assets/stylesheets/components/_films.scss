@@ -2,8 +2,6 @@
 .films {
   background: #1a1a1a;
 
-  .container { max-width: 51em; }
-
   h1 {
     color: $white;
     font-size: 2rem;
@@ -91,4 +89,19 @@
   left: 0;
   top: 0;
   width: 100%;
+}
+
+.breadcrumbs {
+  font-size: .9rem;
+  letter-spacing: .0625rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+
+  a, span {
+    color: $white;
+  }
+
+  .breadcrumbs-current {
+    color: $gray;
+  }
 }

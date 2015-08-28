@@ -1,9 +1,10 @@
+// Gallery
 .gallery {
   @include clean-list;
 }
 
-.gallery-item {
-  margin-bottom: .7em;
+.gallery__item {
+  margin-bottom: .7rem;
 
   @media #{$medium} {
     float: left;
@@ -29,4 +30,45 @@
       margin-left: 0;
     }
   }
+}
+
+// Film Gallery
+.film-gallery {
+  @include clean-list;
+}
+
+.film-gallery__item {
+  margin-bottom: 1rem;
+
+  @media #{$medium} {
+    float: left;
+    margin-left: 6%;
+    width: 47%;
+
+    &:nth-of-type(2n+1) {
+      clear: left;
+      margin-left: 0;
+    }
+  }
+}
+
+.film-gallery__link:hover {
+  text-decoration: none;
+}
+
+.film-gallery__image {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.film-gallery__title {
+  color: $black;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}
+
+.film-gallery__description {
+  color: $gray;
+  font-size: .85rem;
+  margin-bottom: 0;
 }

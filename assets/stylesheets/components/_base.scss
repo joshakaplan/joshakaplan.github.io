@@ -67,3 +67,12 @@ ul {
 .links__item {
   font-size: .9rem;
 }
+
+.links--inline {
+  .links__item { display: inline; }
+}
+
+
+footer {
+  border-top: 1px solid $border-color;
+}
