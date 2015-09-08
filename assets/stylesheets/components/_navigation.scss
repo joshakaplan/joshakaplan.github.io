@@ -1,8 +1,15 @@
 header {
   @include clearfix;
   border-bottom: 1px solid $border-color;
+  text-align: center;
 
-  .container { margin: 1.5rem auto; }
+  .container {
+    margin: 1rem auto;
+
+    @media #{$medium} {
+      margin: 1.5rem auto;
+    }
+  }
 }
 
 .logo {
@@ -11,20 +18,20 @@ header {
   font-size: 1rem;
   font-weight: $bold;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: .8rem;
 
   &:hover { text-decoration: none; }
 
-  @media #{$large} {
+  @media #{$medium} {
     float: left;
     margin-bottom: 0;
   }
 }
 
 .nav {
+  display: inline-block;
   margin: 0;
   padding: 0;
-  text-align: center;
 
   @media #{$medium} {
     float: right;
@@ -33,24 +40,17 @@ header {
 }
 
 .nav__item {
+  float: left;
   font-size: .9rem;
   font-weight: $bold;
+  margin-left: 1rem;
 
-  @media #{$medium} {
-    float: left;
-    margin-left: 1rem;
-
-    &:first-child { margin-left: 0; }
-  }
+  &:first-child { margin-left: 0; }
 }
 
 .nav__link {
   color: $black;
-  display: block;
+  display: inline-block;
 
   &:hover { text-decoration: none; }
-
-  @media #{$medium} {
-    display: inline-block;
-  }
 }
