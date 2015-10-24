@@ -1,9 +1,9 @@
-.hero {
-  background: url("/assets/images/momma-rig-2.jpg") center;
-  background-size: cover;
-  height: 350px;
+@media #{$medium} {
+  .home-column {
+    float: left;
+    width: 48%;
+    margin-left: 4%;
 
-  @media #{$medium} {
-    height: 500px;
+    &:first-child { margin-left: 0; }
   }
 }
