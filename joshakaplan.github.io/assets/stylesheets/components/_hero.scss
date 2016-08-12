@@ -1,0 +1,9 @@
+@media #{$medium} {
+  .home-column {
+    float: left;
+    width: 48%;
+    margin-left: 4%;
+
+    &:first-child { margin-left: 0; }
+  }
+}

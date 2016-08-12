@@ -1,0 +1,81 @@
+// Layout
+html { box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font: $body-font;
+  font-weight: $regular;
+}
+
+body {
+  background-color: $white;
+  color: $black;
+}
+
+// Container
+.container {
+  @include clearfix;
+  margin: 1rem auto;
+  max-width: $content-width;
+  width: 90%;
+
+  @media #{$medium} {
+    margin: 2rem auto;
+  }
+}
+
+// Section
+section {
+  @include clearfix;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 1.5rem;
+
+  &:last-child { border-bottom: 0; }
+}
+
+// Images
+img { width: 100%; }
+
+// Links
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline; }
+}
+
+// Lists
+ul {
+  list-style: none;
+  margin: 0 1.5rem 0 0;
+  padding: 0;
+}
+
+// Links
+.links {
+  margin-bottom: 1em;
+
+  @media #{$medium} {
+    float: left;
+    width: 33.333%;
+  }
+}
+
+.links__item {
+  font-size: .9rem;
+}
+
+.links--inline {
+  float: none;
+  width: auto;
+
+  .links__item { display: inline; }
+}
+
+
+footer {
+  border-top: 1px solid $border-color;
+}

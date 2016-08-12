@@ -1,0 +1,42 @@
+// Font Weights
+$regular: 400;
+$bold:    600;
+
+// Body Font
+$body-font: $regular 116%/1.5 "Open Sans", sans-serif;
+
+// Header Font
+$header-font: $bold 116%/1.25 "Open Sans", sans-serif;
+
+// Colors
+$primary-color: #0079bf;
+$white:         #fff;
+$black:         #1a1a1a;
+$light-gray:    #f8f8f8;
+$gray:          #999;
+$red:           #df7063;
+
+// Border Colors
+$border-color: #eee;
+
+// Primary Button Color
+$primary-button:       $primary-color;
+$primary-button-hover: darken($primary-color, 5%);
+
+// Grid
+$content-width: 51em;
+
+// Medium Screens
+$medium: "(min-width: 40em)";
+
+// Large Screens
+$large: "(min-width: 64em)";
+
+// Animation Duration and Timing
+$duration: .2s;
+$timing: cubic-bezier(.645, .045, .355, 1);
+
+// Z-index
+$overlay-high:   9999;
+$overlay-medium: 9000;
+$overlay-low:    8000;

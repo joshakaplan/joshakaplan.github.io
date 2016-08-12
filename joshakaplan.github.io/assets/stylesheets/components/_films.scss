@@ -1,0 +1,107 @@
+// Films
+.films {
+  background: #1a1a1a;
+
+  h1 {
+    color: $white;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: .0625rem;
+    margin-bottom: .8rem;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $white;
+  }
+
+  section {
+    @include clearfix;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+
+    &:last-child { border-bottom: 0; }
+  }
+
+  header {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+  }
+
+  .logo,
+  .nav__link {
+    color: $white;
+  }
+
+  .film-nav {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    @include clearfix;
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+
+  .film-nav__link {
+    color: $gray;
+    display: block;
+    font-size: .8em;
+    margin-bottom: 1em;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  .right { float: right; }
+}
+
+.description {
+  color: rgba(255, 255, 255, .5);
+
+  p { margin-bottom: 1em; }
+
+  @media #{$large} {
+    float: left;
+    margin-left: 4%;
+
+    &:first-child { margin-left: 0; }
+
+    &.synopsis { width: 70%; }
+    &.credits { width: 26%; }
+  }
+}
+
+// Embed Vimeo
+.embed-container {
+  height: 0;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.breadcrumbs {
+  font-size: .9rem;
+  letter-spacing: .0625rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+
+  a, span {
+    color: $white;
+  }
+
+  .breadcrumbs-current {
+    color: $gray;
+  }
+}
